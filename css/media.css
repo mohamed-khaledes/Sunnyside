@@ -1,0 +1,94 @@
+/*start media form header*/
+@media(max-width:768px){
+    .header{
+        background-image:url(/sunnyside-agency-landing-page-main/images/mobile/image-header.jpg);
+        height: 70vh;
+    }
+    .header nav .navbar ul{
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,10%);
+    background-color: var(--white);
+    padding: 20px 40px;
+    text-align: center;
+    font-weight: bold;
+    width: 65%;
+    display: none;
+    }
+    .show{
+        display: block !important;
+    }
+    .header nav .navbar ul::before{
+        content: "";
+    position: absolute;
+    border-width: 10px;
+    border-color: transparent white white transparent;
+    border-style: solid;
+    top: -19px;
+    right: 0px;
+    }
+    .header nav .navbar ul li{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .header nav .navbar ul li:hover{
+        background-color: var(--Yellow);
+    }
+    .header nav .navbar ul li.active{
+        background-color: var(--Yellow);
+    }
+    .header nav .navbar ul a{
+        color:var(--Dark-d-c);
+    }
+    .header nav button {
+        display: block;
+    }
+    .header .title h1{
+        font-size: 55px;
+        letter-spacing:1px;
+    }
+    .header .title svg{display:none;}
+    /*Start testimonials*/
+        .testimonials{
+            padding: 10px 10px;
+        }
+    /*End testimonials*/
+    .features .text div{
+        padding:40px;
+    }
+}
+/*End media form header*/
+@media(max-width:480px){
+    .testimonials .content{
+        grid-template-columns: repeat(auto-fill,minmax(390px,1fr));
+    }
+    .gallary {
+        grid-template-columns: repeat(auto-fill,minmax(195px,1fr));
+        grid-template-rows: 240px;
+    }
+}
+
+/*start features*/
+@media (max-width:991px){
+    .features .text h2,
+    .features .text .head2{
+        font-size: 35px;
+    }
+    .features .text p{
+        font-size: 16px;
+    }
+}
+@media (max-width:767px){
+    .features{
+        flex-direction: column-reverse;
+    }
+    .fea2{
+        flex-direction: column;
+    }
+    .features .text {
+        text-align: center;
+    }
+};
+/*End features*/
+

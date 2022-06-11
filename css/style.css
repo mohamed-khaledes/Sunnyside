@@ -1,0 +1,312 @@
+body{
+    box-sizing: border-box;
+    /* font-family: 'Fraunces', serif; */
+    font-family: 'Barlow', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* font-size: 18px; */
+}
+html{
+    scroll-behavior: smooth;
+}
+/*global*/
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4{font-family: 'Fraunces', serif;}
+/*End global*/
+:root{
+    --white:hsl(0, 0%, 100%);
+    --Very-d-d-blue: hsl(212, 27%, 19%);
+    --Very-d-g-blue: hsl(213, 9%, 39%);
+    --Dark-g-blue: hsl(232, 10%, 55%);
+    --Grayish-blue: hsl(210, 4%, 67%);
+    --Soft-red: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Dark-d-c : hsl(167, 40%, 24%);
+    --Dark-blue: hsl(198, 62%, 26%);
+    --Dark-m: hsl(168, 34%, 41%);
+}
+/*start header*/
+header{
+    background-image: url(/sunnyside-agency-landing-page-main/images/desktop/image-header.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:calc(100vh - 20px);
+    max-width: 100vw;
+    background-position: center;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: var(--white);
+}
+header nav .logo{
+    flex-basis: 20%;
+    font-size: 30px;
+    font-weight: bold;
+}
+header nav .navbar{
+    flex-basis: 80%;
+}
+header nav .navbar ul{
+    display: flex;
+    justify-content: end;
+    font-size: 15px;
+}
+header nav .navbar ul li{
+    margin-right: 40px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+header a{
+    color: var(--white);
+}
+header nav .navbar ul li.active{
+    background-color: #85d6ff;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+header nav .navbar ul li:hover{
+    background-color: #85d6ff;
+}
+header nav button{
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+}
+header .title {
+    text-align: center;
+    margin-top: 20vh;
+    font-family: 'Fraunces', serif;
+}
+header .title h1{
+    letter-spacing: 7px;
+    font-size: 75px;
+    color: var(--white);
+    text-transform: uppercase;
+    word-spacing: 15px;
+}
+header .title svg{color:var(--white)}
+/*End header*/
+/*Start features*/
+.features{
+    display:flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+.features .text{
+    flex-basis:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.features .text div{
+    width: 70%;
+}
+.features .text h2{
+    font-family: 'Fraunces', serif;
+    font-size: 48px;
+}
+.features .text p{
+    color: var(--Grayish-blue);
+    font-size:20px;
+    line-height: 1.5;
+}
+.features .text a{
+    font-family: 'Fraunces', serif;
+    color: var(--Very-d-d-blue);
+    position: relative;
+}
+.features .text a::after{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    background-color: var(--Yellow);
+    width: 120px;
+    height: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 5px;
+    z-index: -1;
+}
+.features .text a.lin2::after{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    background-color: var(--Soft-red);
+    width: 120px;
+    height: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 5px;
+    z-index: -1;
+}
+.features .img{
+    flex-basis: 50%;
+    margin-bottom: -5px;
+}
+.features .img img{
+    width: 100%;
+}
+.features .text .head2{
+    font-size:40px;
+}
+.features .img1{
+    background-image: url(/sunnyside-agency-landing-page-main/images/desktop/image-graphic-design.jpg);
+    min-height: 700px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+.features .img2{
+    background-image: url(/sunnyside-agency-landing-page-main/images/desktop/image-photography.jpg);
+    min-height: 700px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+.features .txt{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.features .txt div{
+    width: 70%;
+    margin-top: 25vh;
+    color: var(--Very-d-d-blue);
+}
+.features .txt div h3{
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+}
+.features .txt div p{
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 18px;
+}
+/*End features*/
+/* Start testimonials */
+.testimonials{
+    padding: 100px 200px;
+    text-align: center;
+    min-height:600px;
+}
+.testimonials h2{
+    font-size: 35px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: var(--Grayish-blue);
+    margin-bottom: 150px;
+}
+.testimonials .content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+}
+.testimonials .content .box{
+    margin-right:50px;
+    margin-bottom:40px;
+}
+.testimonials .content .box img{
+    width: 85px;
+    border-radius: 50%;
+    margin-bottom:40px;
+}
+.testimonials .content .box p{
+    line-height: 1.5;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--Dark-g-blue);
+}
+.testimonials .content .box h4{
+    font-size: 20px;
+}
+.testimonials .content .box p:nth-of-type(2){
+    font-size: 15px;
+    font-weight: normal;
+}
+/* End testimonials */
+/*start gallary*/
+.gallary{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
+    grid-template-rows:590px;
+}
+.gallary img{
+    max-height: 100%;
+    width: 100%;
+}
+/*End gallary*/
+/*Start footer*/
+footer{
+    min-height: 200px;
+    padding: 100px;
+    background-color: var(--Dark-m);
+    text-align: center;
+}
+footer h2{
+    font-size: 40px;
+    color: var(--Dark-d-c);
+}
+footer .span{
+    margin-bottom: 40px;
+}
+footer .span span{
+    margin-right: 30px;
+    font-weight: 600;
+    color: var(--Dark-d-c);
+    font-size: 18px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+footer .span span:hover{
+    color: var(--white);
+    cursor: pointer;
+}
+footer .icons svg{
+    margin-right: 20px;
+    font-size: 20px;
+    color: var(--Dark-d-c);
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+footer .icons :hover{
+    color: var(--white);
+    cursor: pointer;
+}
+/*End footer*/
+.scrollTotop{
+    position: fixed;
+    bottom: 70px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #f88601;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    display:none;
+}
