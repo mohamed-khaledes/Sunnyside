@@ -1,4 +1,34 @@
-/*start media form header*/
+@media(max-width:479px){
+    .testimonials .content{
+        grid-template-columns: repeat(auto-fill,minmax(390px,1fr));
+    }
+    .gallary {
+        grid-template-columns: repeat(auto-fill,minmax(195px,1fr));
+        grid-template-rows: 240px;
+    }
+    .mobile{
+        display: block;
+    }
+    .disktop{
+        display: none;
+    }
+    .features .img1{
+        background-image: url(../sunnyside-agency-landing-page-main/images/mobile/image-graphic-design.jpg);
+        min-height: 770px;
+    }
+    .features .img2{
+        background-image: url(../sunnyside-agency-landing-page-main/images/mobile/image-photography.jpg);
+        min-height: 770px;
+    }
+}
+@media(min-width:480px){
+    .mobile{
+        display: none;
+    }
+    .disktop{
+        display: block;
+    }
+}
 @media(max-width:768px){
     .header{
         background-image:url(/sunnyside-agency-landing-page-main/images/mobile/image-header.jpg);
@@ -49,37 +79,13 @@
         letter-spacing:1px;
     }
     .header .title svg{display:none;}
-    /*Start testimonials*/
-        .testimonials{
+
+    .testimonials{
             padding: 10px 10px;
-        }
-    /*End testimonials*/
+    }
     .features .text div{
         padding:40px;
     }
-}
-/*End media form header*/
-@media(max-width:480px){
-    .testimonials .content{
-        grid-template-columns: repeat(auto-fill,minmax(390px,1fr));
-    }
-    .gallary {
-        grid-template-columns: repeat(auto-fill,minmax(195px,1fr));
-        grid-template-rows: 240px;
-    }
-}
-
-/*start features*/
-@media (max-width:991px){
-    .features .text h2,
-    .features .text .head2{
-        font-size: 35px;
-    }
-    .features .text p{
-        font-size: 16px;
-    }
-}
-@media (max-width:767px){
     .features{
         flex-direction: column-reverse;
     }
@@ -89,6 +95,14 @@
     .features .text {
         text-align: center;
     }
-};
-/*End features*/
-
+    
+}
+@media (max-width:991px){
+    .features .text h2,
+    .features .text .head2{
+        font-size: 35px;
+    }
+    .features .text p{
+        font-size: 16px;
+    }
+}
