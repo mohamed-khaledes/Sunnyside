@@ -32,7 +32,7 @@ h1,h2,h3,h4{font-family: 'Fraunces', serif;}
 }
 /*start header*/
 header{
-    background-image: url(/sunnyside-agency-landing-page-main/images/desktop/image-header.jpg);
+    background-image: url(/images/desktop/image-header.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -165,7 +165,7 @@ header .title svg{color:var(--white)}
     font-size:40px;
 }
 .features .img1{
-    background-image: url(/sunnyside-agency-landing-page-main/images/desktop/image-graphic-design.jpg);
+    background-image: url(/images/desktop/image-graphic-design.jpg);
     min-height: 700px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -174,7 +174,7 @@ header .title svg{color:var(--white)}
     background-position: center;
 }
 .features .img2{
-    background-image: url(/sunnyside-agency-landing-page-main/images/desktop/image-photography.jpg);
+    background-image: url(/images/desktop/image-photography.jpg);
     min-height: 700px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
