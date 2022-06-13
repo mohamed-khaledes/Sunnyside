@@ -13,11 +13,11 @@
         display: none;
     }
     .features .img1{
-        background-image: url(images/mobile/image-graphic-design.jpg);
+        background-image: url(../images/mobile/image-graphic-design.jpg);
         min-height: 770px;
     }
     .features .img2{
-        background-image: url(images/mobile/image-photography.jpg);
+        background-image: url(../images/mobile/image-photography.jpg);
         min-height: 770px;
     }
 }
@@ -31,7 +31,7 @@
 }
 @media(max-width:768px){
     .header{
-        background-image:url(images/mobile/image-header.jpg);
+        background-image:url(../images/mobile/image-header.jpg);
         height: 70vh;
     }
     .header nav .navbar ul{
